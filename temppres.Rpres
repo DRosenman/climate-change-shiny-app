@@ -1,0 +1,52 @@
+Climate Change App Presentation
+========================================================
+author: 
+date: 
+autosize: true
+
+The Data
+========================================================
+
+The data is from the Berkely Earth Climate Change study. The raw data is available [here](https://www.google.com/search?q=kaggle+berkely+earth&ie=utf-8&oe=utf-8)
+
+Options
+========================================================
+- You can choose between global average land temperature data and global land + ocean temperature data. You can choose the starting year for the plot (any year from 1850 on) and the end year (any year up to 2016). 
+
+- There is also the option to include a best fit line.
+
+Global Average Land Temperature Data 
+========================================================
+
+```{r,echo = FALSE,  warnings = FALSE, messages = FALSE}
+library(ggplot2)
+library(readr)
+landtemperature <- readr::read_csv('landtemperature.csv')
+ggplot(data = landtemperature,
+             aes(x = Year, y = LandAverageTemp)) +
+        geom_point() +
+        geom_line() +
+        geom_smooth(color = 'blue',method = 'lm') +
+        ylab('Celsius') +
+        ggtitle("Global Average Land Temperature")
+
+```
+
+Global Average Land and Ocean Temperature Data
+========================================================
+```{r,echo = FALSE,  warnings = FALSE, messages = FALSE}
+library(ggplot2)
+library(readr)
+landoceantemperature <- readr::read_csv('landandoceantemperature.csv')
+ggplot(data = landoceantemperature,
+             aes(x = Year, y =LandAndOceanAverageTemp)) +
+        geom_point() +
+        geom_line() +
+        geom_smooth(color = 'blue',method = 'lm') +
+        ylab('Celsius') +
+        ggtitle("Global Average Land and Ocean Temperature")
+
+```
+
+
+
