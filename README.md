@@ -10,7 +10,7 @@ The app is available at [https://daverosenman.shinyapps.io/Climate/](https://dav
 The Data
 ========================================================
 
-The raw data that I used is from the 'Berkelely Earth' project. The raw data is available [here](https://www.google.com/search?q=kaggle+berkely+earth&ie=utf-8&oe=utf-8). From [GlobalTemperatures.csv](https://github.com/DRosenman/climate-change-shiny-app/blob/master/GlobalTemperatures.csv). It contains daily global land temperature and daily global land + ocean temperature data from 1750 through 2015.
+The raw data that I used is from the 'Berkelely Earth' project. The raw data is available [here](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data). From [GlobalTemperatures.csv](https://github.com/DRosenman/climate-change-shiny-app/blob/master/GlobalTemperatures.csv). It contains daily global land temperature and daily global land + ocean temperature data from 1750 through 2015.
 
 
 
